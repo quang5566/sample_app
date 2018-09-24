@@ -1,0 +1,16 @@
+vi:
+  static_pages:
+    home:
+      title: "Trang chủ"
+      content: "Đây là trang chủ!"
+    about:
+      title: "Về chúng tôi"
+      content: "Ứng dụng mẫu về Ruby on Rails!"
+    help:
+      title: "Trợ giúp"
+      content: "Đọc hướng dẫn tại đây!"
+    contact:
+      title: "Liên hệ"
+      content: "Liên hệ tới chúng tôi tại đây!"
+  layouts:
+    title: "Ứng dụng đầu tiên"
