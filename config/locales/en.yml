@@ -2,7 +2,8 @@ en:
   static_pages:
     home:
       title: "Home"
-      content: "This is the home page for the Ruby on Rails"
+      content: "Welcome to the Sample App"
+      text: "This is the home page for the"
     about:
       title: "About"
       content: "This is the sample application for the tutorial!"
@@ -14,3 +15,13 @@ en:
       content: "Contact the Ruby on Rails Tutorial about the sample app at here!"
   helpers:
     title: "The First App"
+    home: "Home"
+    help: "Help"
+    login: "Log in"
+    news: "News"
+    about: "About"
+    contact: "Contact"
+    footer: "Ruby on Rails tutorial"
+  users:
+    signup: "Sign up"
+    content: "This will be a signup page for new users."
