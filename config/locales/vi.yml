@@ -2,7 +2,8 @@ vi:
   static_pages:
     home:
       title: "Trang chủ"
-      content: "Đây là trang chủ!"
+      content: "Chào mừng đến với Sample App"
+      text: "Đây là trang chủ của"
     about:
       title: "Về chúng tôi"
       content: "Ứng dụng mẫu về Ruby on Rails!"
@@ -14,3 +15,14 @@ vi:
       content: "Liên hệ tới chúng tôi tại đây!"
   layouts:
     title: "Ứng dụng đầu tiên"
+    home: "Trang chủ"
+    help: "Trợ giúp"
+    login: "Đăng ký"
+    news: "Tin tức"
+    about: "Về chúng tôi"
+    contact: "Liên hệ"
+    footer: "Hướng dẫn Ruby on Rails"
+  users:
+    signup: "Đăng ký"
+    content: "Trang đăng kí cho người dùng mới"
+    
