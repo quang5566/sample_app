@@ -1,3 +1,4 @@
 max_name: 50
 max_mail: 255
 min_pass: 6
+img_size: 80
