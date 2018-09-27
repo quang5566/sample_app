@@ -40,6 +40,7 @@ vi:
     contains: "Có"
     error: "lỗi"
     new_user: "Người dùng mới?"
+    login_remember: "Ghi nhớ đăng nhập"
   sign_success: "Chòa mừng bạn đến với Sample App!"
   n_found: "Không tìm thấy người dùng!"
   login_error: "Email hoặc mật khẩu không hợp lệ!"

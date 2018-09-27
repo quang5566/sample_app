@@ -40,6 +40,7 @@ en:
     contains: "Contains"
     error: "Error"
     new_user: "New user?"
+    login_remember: "Remember me"
   sign_success: "Welcome to the Sample App!"
   n_found: "User not found!"
   login_error: "Invalid email/password combination"
