@@ -1,5 +1,6 @@
 en:
   static_pages:
+    app_name: "sample app"
     home:
       title: "Home"
       content: "Welcome to the Sample App"
@@ -24,6 +25,11 @@ en:
     contact: "Contact"
     footer: "Ruby on Rails tutorial"
   users:
+    user: "Users"
+    account: "Account"
+    profile: "Profile"
+    setting: "Settings"
+    logout: "Log out"
     signup: "Sign up"
     content: "This will be a signup page for new users."
     name: "Name"
@@ -31,5 +37,9 @@ en:
     pass: "Password"
     confirm: "Confirm"
     create: "Create my account"
+    contains: "Contains"
+    error: "Error"
+    new_user: "New user?"
   sign_success: "Welcome to the Sample App!"
   n_found: "User not found!"
+  login_error: "Invalid email/password combination"
