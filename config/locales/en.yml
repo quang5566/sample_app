@@ -4,6 +4,7 @@ en:
       title: "Home"
       content: "Welcome to the Sample App"
       text: "This is the home page for the"
+      sign_btn: "Sign up now!"
     about:
       title: "About"
       content: "This is the sample application for the tutorial!"
@@ -25,3 +26,10 @@ en:
   users:
     signup: "Sign up"
     content: "This will be a signup page for new users."
+    name: "Name"
+    email: "Email"
+    pass: "Password"
+    confirm: "Confirm"
+    create: "Create my account"
+  sign_success: "Welcome to the Sample App!"
+  n_found: "User not found!"

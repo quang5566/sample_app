@@ -4,6 +4,7 @@ vi:
       title: "Trang chủ"
       content: "Chào mừng đến với Sample App"
       text: "Đây là trang chủ của"
+      sign_btn: "Đăng kí ngay!"
     about:
       title: "Về chúng tôi"
       content: "Ứng dụng mẫu về Ruby on Rails!"
@@ -25,4 +26,12 @@ vi:
   users:
     signup: "Đăng ký"
     content: "Trang đăng kí cho người dùng mới"
-    
+    name: "Tên"
+    email: "Email"
+    pass: "Mật khẩu"
+    confirm: "Xác nhận mật khẩu"
+    create: "Tạo tài khoản"
+    contains: "Có"
+    error: "lỗi"
+  sign_success: "Chòa mừng bạn đến với Sample App!"
+  n_found: "Không tìm thấy người dùng!"
