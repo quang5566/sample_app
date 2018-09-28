@@ -1,5 +1,6 @@
 vi:
   static_pages:
+    app_name: "ứng dụng mẫu"
     home:
       title: "Trang chủ"
       content: "Chào mừng đến với Sample App"
@@ -18,12 +19,17 @@ vi:
     title: "Ứng dụng đầu tiên"
     home: "Trang chủ"
     help: "Trợ giúp"
-    login: "Đăng ký"
+    login: "Đăng nhập"
     news: "Tin tức"
     about: "Về chúng tôi"
     contact: "Liên hệ"
     footer: "Hướng dẫn Ruby on Rails"
   users:
+    user: "Người dùng"
+    account: "Tài khoản"
+    profile: "Hồ sơ"
+    setting: "Cài đặt"
+    logout: "Đăng xuất"
     signup: "Đăng ký"
     content: "Trang đăng kí cho người dùng mới"
     name: "Tên"
@@ -33,5 +39,7 @@ vi:
     create: "Tạo tài khoản"
     contains: "Có"
     error: "lỗi"
+    new_user: "Người dùng mới?"
   sign_success: "Chòa mừng bạn đến với Sample App!"
   n_found: "Không tìm thấy người dùng!"
+  login_error: "Email hoặc mật khẩu không hợp lệ!"
