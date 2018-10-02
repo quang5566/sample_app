@@ -26,8 +26,8 @@ class User < ApplicationRecord
   def remember
     @remember_token = User.new_token
     update remember_digest: User.digest(remember_token)
-    cookies[:remember_token] = { value: remember_token,
-      expires: 20.years.from_now.utc }
+    cookies[:remember_token] = {value: remember_token,
+      expires: Settings.exp_cookie.years.from_now.utc}
   end
 
   def authenticated? remember_token
