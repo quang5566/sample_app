@@ -11,10 +11,11 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = t "sign_success"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t "users.check_email"
+      redirect_to root_url
     else
+      flash[:danger] = t "m_error"
       render :new
     end
   end
@@ -44,11 +45,10 @@ class UsersController < ApplicationController
   def destroy
     if @user.destroy
       flash[:success] = t "users.deleted"
-      redirect_to users_url
     else
       flash[:danger] = t "users.err_deleted"
-      redirect_to users_url
     end
+    redirect_to users_url
   end
 
   private

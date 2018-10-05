@@ -1,6 +1,7 @@
 class User < ApplicationRecord
-  attr_reader :remember_token
+  attr_reader :remember_token, :activation_token
   before_save :email_downcase
+  before_create :create_activation_digest
   validates :name, presence: true, length: {maximum: Settings.max_name}
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :email, presence: true, length: {maximum: Settings.max_mail},
@@ -43,10 +44,22 @@ class User < ApplicationRecord
     update remember_digest: nil
   end
 
+  def activate
+    update activated: true, activated_at: Time.zone.now
+  end
+
+  def send_activation_email
+    UserMailer.account_activation(self).deliver_now
+  end
+
   private
 
   def email_downcase
     email.downcase!
   end
 
+  def create_activation_digest
+    @activation_token  = User.new_token
+    @activation_digest = User.digest(activation_token)
+  end
 end
