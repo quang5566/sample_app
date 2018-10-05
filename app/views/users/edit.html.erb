@@ -1,0 +1,29 @@
+<% provide :title, t("users.edit_user") %>
+<h1><%= t ("users.edit_user") %></h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_with model: @user, local: true do |f| %>
+      <%= render "shared/error_messages" %>
+
+      <%= f.label :name, t("users.name") %>
+      <%= f.text_field :name, class: 'form-control' %>
+
+      <%= f.label :email, t("users.mail") %>
+      <%= f.email_field :email, class: "form-control" %>
+
+      <%= f.label :password, t("users.pass") %>
+      <%= f.password_field :password, class: "form-control" %>
+
+      <%= f.label :password_confirmation, t("users.confirm") %>
+      <%= f.password_field :password_confirmation, class: 'form-control' %>
+
+      <%= f.submit t("users.btn_edit"), class: "btn btn-primary" %>
+    <% end %>
+
+    <div class="gravatar_edit">
+      <%= gravatar_for @user %>
+      <%= link_to t("users.change"), "http://gravatar.com/emails", :target=>"_blank"%>
+    </div>
+  </div>
+</div>
