@@ -4,3 +4,4 @@ min_pass: 6
 img_size: 80
 per_sheet: 10
 exp_cookie: 2
+exp_pass: 2
