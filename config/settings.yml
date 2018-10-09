@@ -5,3 +5,6 @@ img_size: 80
 per_sheet: 10
 exp_cookie: 2
 exp_pass: 2
+max_content: 140
+size_img: 5
+size_byte: 1024
