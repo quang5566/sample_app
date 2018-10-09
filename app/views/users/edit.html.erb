@@ -7,7 +7,7 @@
       <%= render "shared/error_messages", object: f.object %>
 
       <%= f.label :name, t("users.name") %>
-      <%= f.text_field :name, class: 'form-control' %>
+      <%= f.text_field :name, class: "form-control" %>
 
       <%= f.label :email, t("users.mail") %>
       <%= f.email_field :email, class: "form-control" %>
@@ -16,7 +16,7 @@
       <%= f.password_field :password, class: "form-control" %>
 
       <%= f.label :password_confirmation, t("users.confirm") %>
-      <%= f.password_field :password_confirmation, class: 'form-control' %>
+      <%= f.password_field :password_confirmation, class: "form-control" %>
 
       <%= f.submit t("users.btn_edit"), class: "btn btn-primary" %>
     <% end %>

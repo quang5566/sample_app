@@ -1,0 +1,5 @@
+<%= form_with model: unfollow_user,
+             html: { method: :delete },
+             remote: true do |f| %>
+  <%= f.submit t("micropost.unfollow"), class: "btn" %>
+<% end %>

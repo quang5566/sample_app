@@ -15,7 +15,7 @@ en:
     contact:
       title: "Contact"
       content: "Contact the Ruby on Rails Tutorial about the sample app at here!"
-  helpers:
+  layouts:
     title: "The First App"
     home: "Home"
     help: "Help"
@@ -89,3 +89,7 @@ en:
     alert: "Maximum file size is 5MB. Please choose a smaller file"
     delete: "delete"
     v_profile: "view my profile"
+    follow: "Follow"
+    unfollow: "Unfollow"
+    following: "Following"
+    followers: "Follower"
