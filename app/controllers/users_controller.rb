@@ -21,9 +21,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    return if @user
-    flash[:danger] = t "n_found"
-    redirect_to root_path
+    @microposts = @user.microposts.page(params[:page]).per Settings.per_sheet
   end
 
   def index
@@ -57,17 +55,12 @@ class UsersController < ApplicationController
     @user = User.find_by id: params[:id]
     return if @user
     flash[:danger] = t "n_found"
+    redirect_to root_path
   end
 
   def user_params
     params.require(:user).permit :name, :email, :password,
       :password_confirmation
-  end
-
-  def logged_in_user
-    return if logged_in?
-    flash[:danger] = t "users.logged"
-    redirect_to login_url
   end
 
   def correct_user
