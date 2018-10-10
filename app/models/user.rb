@@ -36,10 +36,10 @@ class User < ApplicationRecord
     update remember_digest: User.digest(remember_token)
   end
 
-  def authenticated? attribute, token
-    digest = send("#{attribute}_digest")
+  def authenticated? remember_token
+    digest = self.send("remember_digest")
     return false if digest.nil?
-    BCrypt::Password.new(digest).is_password?(token)
+    BCrypt::Password.new(digest).is_password?(remember_token)
   end
 
   def forget

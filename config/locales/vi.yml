@@ -79,3 +79,13 @@ vi:
     send_mail: "Email được gửi cùng hướng dẫn thay đổi mật khẩu"
     submit: "Gửi"
     update_pass: "Cập nhật mật khẩu"
+  micropost:
+    title: "Bài đăng"
+    post: "Đăng"
+    le_img: "phải nhỏ hơn 5MB"
+    cre_micro: "Tạo bài đăng thành công!"
+    del_micro: "Xóa bài đăng thành công!"
+    placeholder: "Bạn đang nghĩ gì?"
+    alert: "Kích thước tệp tối đa là 5MB. Vui lòng chọn tệp khác!"
+    delete: "xóa"
+    v_profile: "hồ sơ của tôi"

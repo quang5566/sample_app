@@ -79,3 +79,13 @@ en:
     send_mail: "Email sent with password reset instructions"
     submit: "Submit"
     update_pass: "Update password"
+  micropost:
+    title: "Micropost Feed"
+    post: "Post"
+    le_img: "should be less than 5MB"
+    cre_micro: "Micropost created!"
+    del_micro: "Micropost deleted!"
+    placeholder: "Compose new micropost..."
+    alert: "Maximum file size is 5MB. Please choose a smaller file"
+    delete: "delete"
+    v_profile: "view my profile"
