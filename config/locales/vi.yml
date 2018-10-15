@@ -89,3 +89,7 @@ vi:
     alert: "Kích thước tệp tối đa là 5MB. Vui lòng chọn tệp khác!"
     delete: "xóa"
     v_profile: "hồ sơ của tôi"
+    follow: "Theo dõi"
+    unfollow: "Hủy theo dõi"
+    following: "Đang theo dõi"
+    followers: "Người theo dõi"
